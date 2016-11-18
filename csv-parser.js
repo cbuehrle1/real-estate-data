@@ -6,11 +6,9 @@ function parse(callback) {
 
   var lines = data.split("\r");
 
-  var columnNames = lines[0].split(",");
-
   var dataContent = []
 
-  for(var i = 1; i < lines.length; i++){
+  for(var i = 1; i < lines.length - 1; i++){
     var indivArr = lines[i].split(",");
 
     var address = {

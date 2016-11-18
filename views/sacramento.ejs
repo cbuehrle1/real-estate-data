@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Sacramento Real Estate</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <h1>Sacramento Real Estate</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Street</th>
+        <th>City</th>
+        <th>Zip</th>
+        <th>State</th>
+        <th>Beds</th>
+        <th>Baths</th>
+        <th>SQFT</th>
+        <th>Type</th>
+        <th>Sale Date</th>
+        <th>Price</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < dataContent.length; i++) { %>
+      <tr>
+        <td><%= dataContent[i].street %></td>
+        <td><%= dataContent[i].city %></td>
+        <td><%= dataContent[i].zip %></td>
+        <td><%= dataContent[i].state %></td>
+        <td><%= dataContent[i].beds %></td>
+        <td><%= dataContent[i].baths %></td>
+        <td><%= dataContent[i].sqft %></td>
+        <td><%= dataContent[i].type %></td>
+        <td><%= dataContent[i].sale_date %></td>
+        <td><%= dataContent[i].price %></td>
+        <td><%= dataContent[i].latitude %></td>
+        <td><%= dataContent[i].longitude %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  <table>
+</body>
+</html>
