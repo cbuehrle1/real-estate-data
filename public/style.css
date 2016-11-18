@@ -50,6 +50,10 @@ h1{
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
+a{
+	font-size: 2em;
+	display: block;
+}
 table{
   max-width: 1100px;
   margin: 0 auto 0 auto;
